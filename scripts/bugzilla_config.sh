@@ -15,8 +15,7 @@ mysql -u root mysql -e "GRANT ALL PRIVILEGES ON *.* TO bugs@localhost IDENTIFIED
 mysql -u root mysql -e "CREATE DATABASE bugs CHARACTER SET = 'utf8';"
 
 /usr/local/bin/cpanm --installdeps --quiet --notest .
-pwd
-ls -al
+
 perl checksetup.pl checksetup_answers.txt
 perl checksetup.pl checksetup_answers.txt
 
